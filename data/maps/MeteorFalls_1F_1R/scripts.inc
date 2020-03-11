@@ -236,31 +236,31 @@ MeteorFalls_1F_1R_Text_WithThisMeteorite: @ 822BF47
 	.string "With this METEORITE, that thing in\n"
 	.string "MT. CHIMNEY will…$"
 
-MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma: @ 822BF84
+MeteorFalls_1F_1R_Text_DontExpectMercyFromHoopaThug: @ 822BF84
 	.string "Heh?\p"
 	.string "I don't know who you are, but if you get\n"
-	.string "in the way of TEAM MAGMA, don't\l"
+	.string "in the way of Hoopa, don't\l"
 	.string "expect any mercy!$"
 
-MeteorFalls_1F_1R_Text_HoldItRightThereMagma: @ 822BFE4
-	.string "Hold it right there, TEAM MAGMA!\p"
+MeteorFalls_1F_1R_Text_HoldItRightThereThug: @ 822BFE4
+	.string "Hold it right there, Thugs!\p"
 	.string "You're badly mistaken if you think you\n"
 	.string "can have your way with the world!$"
 
-MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua: @ 822C04E
-	.string "Hehehe!\n"
-	.string "Even TEAM AQUA joins us!\p"
+MeteorFalls_1F_1R_Text_BeSeeingYouSwordsOfJustice: @ 822C04E
+	.string "Hehehe!\p"
+	.string "Even Keldeo and Virizion and\nCobalion and Terrakion\ljoins us!\p"
 	.string "But it's too much trouble to deal with\n"
 	.string "you all…\p"
 	.string "Heh, it doesn't matter!\p"
 	.string "We've got the METEORITE, so off to\n"
 	.string "MT. CHIMNEY we go!\p"
-	.string "Hehehe! Be seeing you, you TEAM\n"
-	.string "AQUA dingbats!$"
+	.string "Hehehe! Be seeing you, you Sword\n"
+	.string "Justice dingbats!$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore: @ 822C11C
-	.string "ARCHIE: Didn't I see you before?\n"
-	.string "At SLATEPORT's MUSEUM?\p"
+	.string "Keldeo: Didn't I see you before?\n"
+	.string "At Arona's Forest?\p"
 	.string "Ah, so your name is {PLAYER}.\p"
 	.string "At the time, I thought you were one\n"
 	.string "of TEAM MAGMA's goons.\p"
