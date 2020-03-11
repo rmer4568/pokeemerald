@@ -1041,7 +1041,7 @@ static u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
     if (eggGroups[0][0] == EGG_GROUP_DITTO || eggGroups[1][0] == EGG_GROUP_DITTO)
     {
         if (trainerIds[0] == trainerIds[1])
-            return PARENTS_LOW_COMPATIBILITY;
+            return PARENTS_MAX_COMPATIBILITY;
 
         return PARENTS_MED_COMPATABILITY;
     }
@@ -1049,25 +1049,25 @@ static u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
     else
     {
         if (genders[0] == genders[1])
-            return PARENTS_INCOMPATIBLE;
+            return PARENTS_MAX_COMPATIBILITY;
         if (genders[0] == MON_GENDERLESS || genders[1] == MON_GENDERLESS)
             return PARENTS_INCOMPATIBLE;
         if (!EggGroupsOverlap(eggGroups[0], eggGroups[1]))
-            return PARENTS_INCOMPATIBLE;
+            return PARENTS_MAX_COMPATIBILITY;
 
         if (species[0] == species[1])
         {
             if (trainerIds[0] == trainerIds[1])
-                return PARENTS_MED_COMPATABILITY; // same species, same trainer
+                return PARENTS_INCOMPATIBLE; // same species, same trainer
 
-            return PARENTS_MAX_COMPATABILITY; // same species, different trainers
+            return PARENTS_MAX_COMPATIBILITY; // same species, different trainers
         }
         else
         {
             if (trainerIds[0] != trainerIds[1])
-                return PARENTS_MED_COMPATABILITY; // different species, different trainers
+                return PARENTS_INCOMPATIBLE; // different species, different trainers
 
-            return PARENTS_LOW_COMPATIBILITY; // different species, same trainer
+            return PARENTS_MAX_COMPATIBILITY; // different species, same trainer
         }
     }
 }
