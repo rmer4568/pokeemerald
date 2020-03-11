@@ -6277,15 +6277,73 @@ u16 GetBattleBGM(void)
 
         switch (trainerClass)
         {
-        case TRAINER_CLASS_AQUA_LEADER:
-        case TRAINER_CLASS_MAGMA_LEADER:
+        case TRAINER_CLASS_LEADER:
+        case TRAINER_CLASS_BOSS:
+        case TRAINER_CLASS_ADMIN:
+        case TRAINER_CLASS_COMMANDER:
+        case TRAINER_CLASS_MEMBER:
+        case TRAINER_CLASS_SUBJECT:
+        case TRAINER_CLASS_DRAGON_SUBJECT:
+        case TRAINER_CLASS_UNICORN_SUBJECT:
+        case TRAINER_CLASS_DRAGON_LEADER:
+        case TRAINER_CLASS_UNICORN_LEADER:
+        case TRAINER_CLASS_DRAGON_BOSS:
+        case TRAINER_CLASS_UNICORN_BOSS:
+        case TRAINER_CLASS_EXGUARD:
+        case TRAINER_CLASS_GUARD:
+        case TRAINER_CLASS_EXGENERAL:
+        case TRAINER_CLASS_GENERAL:
+        case TRAINER_CLASS_EXQUEEN:
+        case TRAINER_CLASS_EXKING:
+        case TRAINER_CLASS_EXPRINCESS:
+        case TRAINER_CLASS_EXPRINCE:
+        case TRAINER_CLASS_PRINCESS:
+        case TRAINER_CLASS_PRINCE:
+        case TRAINER_CLASS_QUEEN:
+        case TRAINER_CLASS_KING:
             return MUS_BATTLE30;
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:
-        case TRAINER_CLASS_AQUA_ADMIN:
-        case TRAINER_CLASS_MAGMA_ADMIN:
+        case TRAINER_CLASS_TEAM_MEZHA:
+        case TRAINER_CLASS_TEAM_NEZHA:
+        case TRAINER_CLASS_TEAM_ROCKET:
+        case TRAINER_CLASS_TEAM_SHADOW:
+        case TRAINER_CLASS_TEAM_GALACTIC:
+        case TRAINER_CLASS_TEAM_PLASMA:
+        case TRAINER_CLASS_HOOPA_THUG:
+        case TRAINER_CLASS_TEAM_FIRE:
+        case TRAINER_CLASS_TEAM_WATER:
+        case TRAINER_CLASS_TEAM_GRASS:
+        case TRAINER_CLASS_TEAM_ELECTRIC:
+        case TRAINER_CLASS_TEAM_POISON:
+        case TRAINER_CLASS_TEAM_PSYCHIC:
+        case TRAINER_CLASS_TEAM_FAIRY:
+        case TRAINER_CLASS_TEAM_FIGHTING:
+        case TRAINER_CLASS_TEAM_FLYING:
+        case TRAINER_CLASS_TEAM_BUG:
+        case TRAINER_CLASS_TEAM_ROCK:
+        case TRAINER_CLASS_TEAM_STEEL:
+        case TRAINER_CLASS_TEAM_GHOST:
+        case TRAINER_CLASS_TEAM_NORMAL:
+        case TRAINER_CLASS_TEAM_ICE:
+        case TRAINER_CLASS_TEAM_NIGHT:
+        case TRAINER_CLASS_TEAM_SAND:
+        case TRAINER_CLASS_TEAM_RAIN:
+        case TRAINER_CLASS_TEAM_SEA:
+        case TRAINER_CLASS_TEAM_SKY:
+        case TRAINER_CLASS_TEAM_DARK:
+        case TRAINER_CLASS_TEAM_LIGHT:
+        case TRAINER_CLASS_TEAM_STONE:
+        case TRAINER_CLASS_TEAM_METAL:
+        case TRAINER_CLASS_TEAM_BIRD:
+        case TRAINER_CLASS_TEAM_HIVE:
+        case TRAINER_CLASS_TEAM_SILK:
+        case TRAINER_CLASS_TEAM_MUD:
+        case TRAINER_CLASS_TEAM_BREEZE:
+        case TRAINER_CLASS_HOOPA_VHUG:
+        case TRAINER_CLASS_HOOPA_LHUG:
             return MUS_BATTLE31;
-        case TRAINER_CLASS_LEADER:
+        case TRAINER_CLASS_GYM_LEADER:
             return MUS_BATTLE32;
         case TRAINER_CLASS_CHAMPION:
             return MUS_BATTLE33;
@@ -6295,15 +6353,9 @@ u16 GetBattleBGM(void)
             if (!StringCompare(gTrainers[gTrainerBattleOpponent_A].trainerName, gText_BattleWallyName))
                 return MUS_BATTLE20;
             return MUS_BATTLE35;
-        case TRAINER_CLASS_ELITE_FOUR:
+        case TRAINER_CLASS_ELITE_TRAINER:
             return MUS_BATTLE38;
-        case TRAINER_CLASS_SALON_MAIDEN:
-        case TRAINER_CLASS_DOME_ACE:
-        case TRAINER_CLASS_PALACE_MAVEN:
-        case TRAINER_CLASS_ARENA_TYCOON:
-        case TRAINER_CLASS_FACTORY_HEAD:
-        case TRAINER_CLASS_PIKE_QUEEN:
-        case TRAINER_CLASS_PYRAMID_KING:
+        case TRAINER_CLASS_LEGEND_TRAINER:
             return MUS_VS_FRONT;
         default:
             return MUS_BATTLE20;
