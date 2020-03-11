@@ -265,8 +265,8 @@ Route101_Text_HelpMe: @ 81EBE8F
 Route101_Text_PleaseHelp: @ 81EBE9A
 	.string "Hello! You over there!\n"
 	.string "Please! Help!\p"
-	.string "In my BAG!\n"
-	.string "There's a POKé BALL!$"
+	.string "Help me!!\n"
+	.string "Get Rid of Him!$"
 
 Route101_Text_DontLeaveMe: @ 81EBEDF
 	.string "Wh-Where are you going?!\n"
@@ -297,5 +297,5 @@ Route101_Text_WildPokemonInTallGrass: @ 81EC04A
 
 Route101_Text_RouteSign: @ 81EC0C8
 	.string "ROUTE 101\n"
-	.string "{UP_ARROW} OLDALE TOWN$"
+	.string "{UP_ARROW} ULDINA TOWN$"
 
