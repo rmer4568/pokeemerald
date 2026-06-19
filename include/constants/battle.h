@@ -97,6 +97,7 @@
 #define STATUS1_NONE             0x0
 #define STATUS1_SLEEP            0x7
 #define STATUS1_POISON           0x8
+#define STATUS1_FROST            0x9
 #define STATUS1_BURN             0x10
 #define STATUS1_FREEZE           0x20
 #define STATUS1_PARALYSIS        0x40
