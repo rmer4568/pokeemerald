@@ -97,11 +97,11 @@
 #define STATUS1_NONE             0x0
 #define STATUS1_SLEEP            0x7
 #define STATUS1_POISON           0x8
-#define STATUS1_FROST            0x9
 #define STATUS1_BURN             0x10
 #define STATUS1_FREEZE           0x20
 #define STATUS1_PARALYSIS        0x40
 #define STATUS1_TOXIC_POISON     0x80
+#define STATUS1_FROST            0x100
 #define STATUS1_TOXIC_COUNTER    0xF00
 #define STATUS1_PSN_ANY          (STATUS1_POISON | STATUS1_TOXIC_POISON)
 #define STATUS1_ANY              (STATUS1_SLEEP | STATUS1_POISON | STATUS1_BURN | STATUS1_FREEZE | STATUS1_PARALYSIS | STATUS1_TOXIC_POISON)
